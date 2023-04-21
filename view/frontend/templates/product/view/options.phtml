@@ -1,0 +1,32 @@
+<?php
+/**
+ * author E.Demidov
+ */
+
+/* @var $block DjoSmer\CustomOptionSwatch\Block\Product\View\Options */
+?>
+
+<?php $groupsOptions = $block->getGroupsOfOption() ?>
+<?php $_productId = $block->getProduct()->getId() ?>
+<?php if (count($groupsOptions)) : ?>
+    <script type="text/x-magento-init">
+    {
+        "#product_addtocart_form": {
+            "priceOptions": {
+                "optionConfig": <?= /* @noEscape */
+        $block->getJsonConfig() ?>,
+                "controlContainer": ".field",
+                "priceHolderSelector": "[data-product-id='<?= $block->escapeHtml($_productId) ?>'][data-role=priceBox]"
+            }
+        }
+    }
+
+    </script>
+    <?php foreach ($groupsOptions as $_options) : ?>
+        <div class="fieldset" tabindex="0">
+            <?php foreach ($_options as $_option) : ?>
+                <?= $block->getOptionHtml($_option) ?>
+            <?php endforeach; ?>
+        </div>
+    <?php endforeach; ?>
+<?php endif; ?>

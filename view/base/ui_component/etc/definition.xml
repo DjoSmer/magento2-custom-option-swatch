@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--~
+  ~ author E.Demidov
+  -->
+<components xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:DjoSmer_CustomOptionSwatch:etc/ui_definition.xsd">
+    <swatch class="DjoSmer\CustomOptionSwatch\Component\Form\Element\Swatch" component="DjoSmer_CustomOptionSwatch/js/form/element/swatch" template="ui/form/field">
+        <settings>
+            <elementTmpl>DjoSmer_CustomOptionSwatch/form/element/swatch</elementTmpl>
+        </settings>
+    </swatch>
+</components>

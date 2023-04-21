@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!--~
+  ~ author E.Demidov
+  -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\Ui\Config\Reader\Definition\SchemaLocator" type="DjoSmer\CustomOptionSwatch\Config\Reader\Definition\SchemaLocator" />
+    <preference for="Magento\Catalog\Block\Product\View\Options" type="DjoSmer\CustomOptionSwatch\Block\Product\View\Options" />
+    <preference for="Magento\Catalog\Block\Product\View\Options\Type\Select" type="DjoSmer\CustomOptionSwatch\Block\Product\View\Options\Type\Select" />
+    <preference for="Magento\Catalog\Block\Product\View\Options\Type\Select\Checkable" type="DjoSmer\CustomOptionSwatch\Block\Product\View\Options\Type\Select\Checkable" />
+</config>

@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<!--~
+  ~ author E.Demidov
+  -->
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+
+    <table name="catalog_product_option">
+        <column name="group" xsi:type="varchar" length="255" nullable="true" comment="Group" />
+    </table>
+
+    <table name="catalog_product_option_type_value">
+        <column name="swatch" xsi:type="varchar" length="255" nullable="true" comment="Group" />
+        <column xsi:type="smallint" name="checked" unsigned="false" nullable="false" identity="false"
+                default="0" comment="Is Checked"/>
+    </table>
+
+</schema>

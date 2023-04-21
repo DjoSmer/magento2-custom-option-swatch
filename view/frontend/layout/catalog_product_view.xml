@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!--~
+  ~ author E.Demidov
+  -->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="product.info.options.wrapper" template="DjoSmer_CustomOptionSwatch::product/view/options/wrapper.phtml"/>
+        <referenceBlock name="product.info.options" template="DjoSmer_CustomOptionSwatch::product/view/options.phtml"/>
+    </body>
+</page>
